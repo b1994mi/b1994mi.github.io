@@ -1,0 +1,144 @@
+.body-dark {
+    margin: 0;
+    background-color: #303030;
+    color: lightgray;
+    font-family: Helvetica, sans-serif;
+}
+
+.body-light {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.header-thing-dark {
+    margin: 0;
+    background: rgb(0,212,255);
+    background: linear-gradient(149deg, rgba(0,212,255,1) 5%, rgba(81,153,83,1) 55%);
+    color: white;
+    text-align: center;
+}
+
+.header-thing-light {
+    margin: 0;
+    background: rgba(81,153,83);
+    background: linear-gradient(149deg, rgba(81,153,83,1) 5%, rgba(0,212,255,1) 55%);
+    color: rgb(32, 32, 32);
+    text-align: center;
+}
+
+.over-sized {
+    font-size: 7rem;
+    padding-bottom: 1.2rem;
+}
+
+.over-sized-title {
+    font-size: 3.5rem;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    margin: 0px;
+}
+
+.over-sized-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.title-body-first {
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    margin: -4rem 0rem 2.5rem 3rem;
+}
+
+.title-body-others {
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    margin: 5rem 0rem 2.5rem 3rem;
+}
+
+.title-card {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #e6e6e6;
+    letter-spacing: -0.1rem;
+}
+
+.body-card {
+    font-size: 1rem;
+    color: #ececec;
+}
+
+.title-card-light {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+}
+
+.body-card-light {font-size: 1rem}
+
+.extra-padding {padding: 0 2rem}
+
+.left-padding {padding: 0 .8rem}
+
+.btn-toggle {
+    background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+    border-radius: 2rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn-toggle:hover {
+    background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+}
+
+.pilbar-bg{background: linear-gradient(to bottom, #5a5959 15%, #747474 100%)}
+
+.pilbar-fg{background: linear-gradient(to bottom, #7ACE7C 5%, #4CAF50 100%)}
+
+.glider-contain {
+    max-width: 1400px;
+}
+
+@media (max-width:600px){
+    .over-sized {
+        font-size: 4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .over-sized-title {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .title-body-first, .title-body-others {
+        font-size: 1.9rem;
+        margin: 0rem 0rem 0.5rem 0rem;
+    }
+
+    .over-sized-subtitle {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .title-card, .title-card-light {
+        font-size: 1.5rem;
+    }
+
+    .body-card, .body-card-light {
+        font-size: 0.9rem;
+    }
+
+    .extra-padding {
+        padding: 0 0;
+    }
+
+    .btn-toggle {
+        font-size: 1.3rem;
+    }
+
+}

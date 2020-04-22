@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="I am a newbie web developer based in Jakarta, Indonesia. I use Vue.js to help me build static websites  and have some experience in Django.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ismail b1994mi">
+
+  <title>Ismail (b1994mi) Junior Web Developer</title>
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/glider.css">
+  <link rel="stylesheet" href="vendors/all.min.css">
+  <link rel="stylesheet" href="vendors/w3.css">
+  <script src="vendors/vue.min.js"></script>
+  <script src="vendors/glider.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div :class="[isDark ? 'body-dark' : 'body-light', 'w3-container']" style="transition: 0.2s">
+
+      <div :class="[isDark ? 'header-thing-dark' : 'header-thing-light']" style="margin: 0 -16px 0 -16px">
+
+        <header-title v-bind:is-dark="isDark" v-on:change-dark="changeIsDark"></header-title>
+
+        <svg style="display:block" viewBox="0 0 1440 319">
+          <path :style="{ fill: svgColor, transition: '0.2s' }"
+            d="M0,224L48,192C96,160,192,96,288,106.7C384,117,480,203,576,234.7C672,267,768,245,864,202.7C960,160,1056,96,1152,58.7C1248,21,1344,11,1392,5.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
+      </div>
+
+      <div class="w3-content" style="max-width:1400px">
+
+        <p class="title-body-first">My Works</p>
+        <works-card v-bind:is-dark="isDark"></works-card>
+
+        <p class="title-body-others">My Skills</p>
+        <skills-card v-bind:is-dark="isDark"></skills-card>
+
+        <p class="title-body-others">About Me</p>
+        <aboutme-content v-bind:is-dark="isDark"></aboutme-content>
+        
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script src="js/HeaderTitle.js"></script>
+  <script src="js/WorksCard.js"></script>
+  <script src="js/SkillsCard.js"></script>
+  <script src="js/AboutmeContent.js"></script>
+  <script src="js/GliderCards.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
