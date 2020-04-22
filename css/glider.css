@@ -50,6 +50,7 @@
   border: 0;
   background-color: rgba(219, 219, 219, 0.8);
   clip-path: circle(1.2rem);
+  -webkit-clip-path: circle(1.2rem);
   top: 35%;
   color: rgb(24, 24, 24);
   transition: .5s;
@@ -58,6 +59,7 @@
   .glider-prev, .glider-next{
     font-size: 1.2rem;
     clip-path: circle(.8rem);
+    -webkit-clip-path: circle(.8rem);
     padding: 0.5rem;
     top: 40%;
   }
