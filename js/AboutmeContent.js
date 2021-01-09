@@ -55,7 +55,7 @@ Vue.component('contacts-card', {
     data: function () {
         return {
             data: [
-                {logo: 'fa fa-map-marker-alt', desc: 'Jakarta, Indonesia'},
+                {logo: 'fa fa-map-marker-alt', desc: 'South Jakarta, Indonesia'},
                 {logo: 'fa fa-envelope-square', desc: 'b1994mi [et] gmail [.] com'},
                 {logo: 'fab fa-whatsapp', desc: '+62 811 9000 506', link: 'https://api.whatsapp.com/send?phone=628119000506'},
                 {logo: 'fab fa-line', desc: 'Line ID: b1994mi', link: 'https://line.me/ti/p/0PLZhkaYHV'},
@@ -91,10 +91,10 @@ Vue.component('exp-card', {
                     items: [
                         {
                             institution: 'Ministry of Public Works',
-                            detail: 'Data Analyst Staff',
+                            detail: 'Data Management Staff',
                             from: 'Jun 2019',
-                            to: 'Present',
-                            present: true,
+                            to: 'Dec 2020',
+                            present: false,
                             desc: `Transformed the data flow from offline Excel
                             files to online Google Sheet and normalize the structure.
                             Also, provide reports and presentations using the data collected.`
@@ -105,6 +105,13 @@ Vue.component('exp-card', {
                     title : 'Education',
                     logo: 'fa fa-user-graduate',
                     items: [
+                        {
+                            institution: 'Shift Academy',
+                            detail: 'Full-Stack Bootcamp',
+                            from: 'Dec 2020',
+                            to: 'Feb 2021',
+                            desc: `Full-stack bootcamp with MERN stack.`
+                        },
                         {
                             institution: 'Nurul Fikri',
                             detail: 'Web Complete',

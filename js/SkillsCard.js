@@ -9,7 +9,7 @@ Vue.component('skills-card', {
           title : 'Coding Skills',
           logo: 'fa fa-laptop-code',
           skills: [
-            {logo: 'fab fa-html5', logo1: 'fab fa-css3-alt', logo2: 'fab fa-js-square', title: 'HTML, CSS, JS', value: '50%'},
+            {logo: 'fab fa-js-square', title: 'Javascript', value: '50%'},
             {logo: 'fab fa-vuejs', title: 'Vue.js', value: '30%'},
             {logo: 'fab fa-php', title: 'PHP', value: '20%'},
             {logo: 'fab fa-python', title: 'Django Framework', value: '10%'},
@@ -53,7 +53,7 @@ Vue.component('skills-card', {
 
     <div class="w3-col l6 m6 s12 w3-margin" v-for="datum in data" :key="datum">
       <div :class="[isDark ? 'w3-dark-grey' : 'w3-khaki', 'w3-card w3-padding-large w3-round-large']">
-        <div :class="isDark? 'title-card' : 'title-card-light'">
+        <div :class="isDark ? 'title-card' : 'title-card-light'">
           <i :class="[datum.logo, 'w3-margin-right w3-xlarge w3-margin-bottom']"></i>
           {{ datum.title }}
         </div>
