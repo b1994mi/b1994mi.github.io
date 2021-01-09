@@ -1,10 +1,12 @@
+let isPreferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 new Vue({
 
     el: '#app',
 
     data: {
-        isDark: true,
-        svgColor: '#303030',
+        isDark: isPreferDark,
+        svgColor: isPreferDark? '#303030' : '#fff',
     },
 
     methods: {
