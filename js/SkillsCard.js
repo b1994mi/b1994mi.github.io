@@ -62,37 +62,39 @@ Vue.component('skills-card', {
   },
 
   template: `
-  <div class="glider-contain">
+  <div style="display:flex; justify-content: center;">
+    <div class="glider-contain">
 
-  <div id="glider1">
+    <div id="glider1">
 
-    <div class="w3-col l6 m6 s12 w3-margin" v-for="datum in data" :key="datum">
-      <div :class="[isDark ? 'w3-dark-grey' : 'w3-khaki', 'w3-card w3-padding-large w3-round-large']">
-        <div :class="isDark ? 'title-card' : 'title-card-light'">
-          <i :class="[datum.logo, 'w3-margin-right w3-xxlarge w3-margin-bottom']"></i>
-          {{ datum.title }}
+      <div class="w3-col l6 m6 s12 w3-margin" v-for="datum in data" :key="datum">
+        <div :class="[isDark ? 'w3-dark-grey' : 'w3-khaki', 'w3-card w3-padding-large w3-round-large']">
+          <div :class="isDark ? 'title-card' : 'title-card-light'">
+            <i :class="[datum.logo, 'w3-margin-right w3-xxlarge w3-margin-bottom']"></i>
+            {{ datum.title }}
+          </div>
+          <div class="extra-padding" v-for="skill in datum.skills" :key="skill">
+            <p :class="isDark? 'body-card' : 'body-card-light'" style="margin-bottom:0">
+              <span class="w3-xlarge w3-margin-right">
+                <i :class="skill.logo"></i>
+                <i :class="skill.logo1"></i>
+                <i :class="skill.logo2"></i>
+              </span>
+              <span class="w3-large">{{ skill.title }}</span>
+            </p>
+              <div>
+                <span>{{ skill.value }}</span>
+              </div>
+          </div>
+          <br>
         </div>
-        <div class="extra-padding" v-for="skill in datum.skills" :key="skill">
-          <p :class="isDark? 'body-card' : 'body-card-light'" style="margin-bottom:0">
-            <span class="w3-xlarge w3-margin-right">
-              <i :class="skill.logo"></i>
-              <i :class="skill.logo1"></i>
-              <i :class="skill.logo2"></i>
-            </span>
-            <span class="w3-large">{{ skill.title }}</span>
-          </p>
-            <div>
-              <span>{{ skill.value }}</span>
-            </div>
-        </div>
-        <br>
       </div>
-    </div>
 
+      </div>
+      <button id="glider-prev1" class="glider-prev"></button>
+      <button id="glider-next1" class="glider-next"></button>
+      <div id="dots1"></div>
     </div>
-    <button id="glider-prev1" class="glider-prev">&laquo;</button>
-    <button id="glider-next1" class="glider-next">&raquo;</button>
-    <div id="dots1"></div>
   </div>
   `,
 

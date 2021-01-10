@@ -15,11 +15,11 @@ window.addEventListener('load',function(){
                 settings: {slidesToShow: 1, draggable: true,}
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {slidesToShow: 2, draggable: true,}
             },
             {
-                breakpoint: 993,
+                breakpoint: 1200,
                 settings: {slidesToShow: 3}
             },
         ]
@@ -43,6 +43,10 @@ window.addEventListener('load',function(){
             },
             {
                 breakpoint: 600,
+                settings: {slidesToShow: 1,  slidesToScroll: 1, draggable: true,}
+            },
+            {
+                breakpoint: 1100,
                 settings: {slidesToShow: 2, draggable: true,}
             },
         ]

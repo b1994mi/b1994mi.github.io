@@ -29,30 +29,32 @@ Vue.component('works-card', {
     },
 
     template: `
-    <div class="glider-contain">
-        <div id="glider0">
-            <div
-                :class="[
-                    isDark ? 'w3-dark-grey' : 'w3-khaki',
-                    'w3-card w3-padding w3-round-large w3-center w3-margin'
-                ]"
-                v-for="work in works"
-                :key="work"
-            >
-                <img :alt="work.title" :src="work.img" style="width: 100%">
-                <div :class="isDark? 'title-card' : 'title-card-light'">{{ work.title }}</div>
-                <p :class="isDark? 'body-card' : 'body-card-light'">{{ work.content }}</p>
-                <div>
-                    <p v-for="link in work.links" :key="link" class="w3-green w3-round-xlarge w3-padding">
-                        <a :href="link.link"><i :class="link.logo"></i> {{ link.logoText }}</a>
-                    </p>
+    <div style="display:flex; justify-content: center;">
+        <div class="glider-contain">
+            <div id="glider0">
+                <div
+                    :class="[
+                        isDark ? 'w3-dark-grey' : 'w3-khaki',
+                        'w3-card w3-padding w3-round-large w3-center w3-margin'
+                    ]"
+                    v-for="work in works"
+                    :key="work"
+                >
+                    <img :alt="work.title" :src="work.img" style="width: 100%; max-width: 300px;">
+                    <div :class="isDark? 'title-card' : 'title-card-light'">{{ work.title }}</div>
+                    <p :class="isDark? 'body-card' : 'body-card-light'">{{ work.content }}</p>
+                    <div>
+                        <p v-for="link in work.links" :key="link" class="w3-green w3-round-xlarge w3-padding">
+                            <a :href="link.link"><i :class="link.logo"></i> {{ link.logoText }}</a>
+                        </p>
+                    </div>
+                    <br>
                 </div>
-                <br>
             </div>
+            <button id="glider-prev" class="glider-prev"></button>
+            <button id="glider-next" class="glider-next"></button>
+            <div id="dots"></div>
         </div>
-        <button id="glider-prev" class="glider-prev">&laquo;</button>
-        <button id="glider-next" class="glider-next">&raquo;</button>
-        <div id="dots"></div>
     </div>
     `,
 
