@@ -67,7 +67,7 @@ Vue.component('skills-card', {
 
     <div id="glider1">
 
-      <div class="w3-col l6 m6 s12 w3-margin" v-for="datum in data" :key="datum">
+      <div class="w3-col l6 m6 s12 w3-margin custom-card-position" v-for="datum in data" :key="datum">
         <div :class="[isDark ? 'w3-dark-grey' : 'w3-khaki', 'w3-card w3-padding-large w3-round-large']">
           <div :class="isDark ? 'title-card' : 'title-card-light'" style="margin-top:0.5em">
             <i :class="[datum.logo, 'w3-margin-right w3-xxlarge w3-margin-bottom']"></i>

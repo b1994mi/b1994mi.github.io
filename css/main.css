@@ -141,4 +141,9 @@
         font-size: 1.3rem;
     }
 
+    .custom-card-position{
+        display:flex;
+        align-items: center;
+    }
+
 }
