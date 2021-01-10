@@ -23,21 +23,21 @@ Vue.component('skills-card', {
           ],
         },
         {
-          title : 'Other Coding Skills',
-          logo: 'fa fa-file-code',
-          skills: [
-            {logo: 'fa fa-file-csv', title: 'SQL', value: 'Working as Data Management Staff gave me the opportunity to get a hands on querying data from data lakes using PostgreSQL as the DBMS.'},
-            {logo: 'fab fa-linux', title: 'GNU/Linux', value: "Since high school, I'm very comfortable in using Linux distros for daily usage."},
-            {logo: 'fab fa-google', title: 'Googling', value: 'No kidding! I’m so used to googling problems first since high school to the point that I was able to install Ubuntu and other linux distros back then.'},
-          ],
-        },
-        {
           title : 'Coding Concepts',
           logo: 'fa fa-brain',
           skills: [
             {logo: 'fa fa-database', title: 'Relational Database', value: "I learned relational database concepts, such as normalization and ERD, when I took Database class back in college."},
             {logo: 'fab fa-git-alt', title: 'Git', value: 'Since bootcamp, I am used to commit changes to my code via git and pushing it to Github.'}, 
             {logo: 'fa fa-plug', title: 'REST API', value: 'Consuming REST API is a walk in a park with my understanding of fetch/ajax on front-end side. Currently learning to create REST API service using express.js'},
+          ],
+        },
+        {
+          title : 'Other Coding Skills',
+          logo: 'fa fa-file-code',
+          skills: [
+            {logo: 'fa fa-file-csv', title: 'SQL', value: 'Working as Data Management Staff gave me the opportunity to get a hands on querying data from data lakes using PostgreSQL as the DBMS.'},
+            {logo: 'fab fa-linux', title: 'GNU/Linux', value: "Since high school, I'm very comfortable in using Linux distros for daily usage."},
+            {logo: 'fab fa-google', title: 'Googling 😉', value: 'No kidding! I’m so used to googling problems first since high school to the point that I was able to install Ubuntu and other linux distros back then.'},
           ],
         },
         {
