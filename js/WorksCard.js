@@ -11,7 +11,7 @@ Vue.component('works-card', {
                     {link: 'https://github.com/rahmatvp/projectIsmailRahmat', logo: 'fab fa-github w3-large', logoText: 'Github'},
                 ]},
                 { img: 'images/my-fifth.png', title: 'Redesign Lazada', content: "A bootcamp assignment using Bootstrap and pure Javascript. I was able to recreate the Lazada website, there is a search bar that can search the products and you can add the products into the cart.", links: [
-                    {link: 'http://rocky-retreat-58140.herokuapp.com/', logo: 'fa fa-desktop w3-large', logoText: 'Website'},
+                    {link: 'https://b1994mi.github.io/redesign-lazada/', logo: 'fa fa-desktop w3-large', logoText: 'Website'},
                     {link: 'https://github.com/b1994mi/redesign-lazada', logo: 'fab fa-github w3-large', logoText: 'Github'},
                 ]},
                 { img: 'images/my-first.png', title: 'My Map App', content: "A simple web app using Django Framework. It extends the default User Model and can show a map using user's saved coordinate.", links: [
