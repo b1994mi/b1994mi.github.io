@@ -20,6 +20,7 @@ Vue.component('skills-card', {
           skills: [
             {logo: 'fab fa-python', title: 'Django Framework', value: 'For 3 weeks I made a simple web app with this framework even though I never code in Python nor MVC framework before.'},
             {logo: 'fab fa-vuejs', title: 'Vue.js', value: 'I can do basic stuff like passing props so that a button can toggle the page into dark/light mode, and is implemented in my portfolio web page.'},
+            {logo: 'fab fa-node-js', title: 'Node.js with Express', value: 'Using Express.js on Node.js, I was able to create and fork back-end apps for REST API purposes.'},
           ],
         },
         {
@@ -35,7 +36,7 @@ Vue.component('skills-card', {
           title : 'Other Coding Skills',
           logo: 'fa fa-file-code',
           skills: [
-            {logo: 'fa fa-file-csv', title: 'SQL', value: 'Working as Data Management Staff gave me the opportunity to get a hands on querying data from data lakes using PostgreSQL as the DBMS.'},
+            {logo: 'fa fa-file-csv', title: 'SQL & NoSQL', value: 'I can work with RDBMS like PostgreSQL and NoSQL DBMS like MongoDB.'},
             {logo: 'fab fa-linux', title: 'GNU/Linux', value: "Since high school, I'm very comfortable in using Linux distros for daily usage."},
             {logo: 'fab fa-google', title: 'Googling 😉', value: 'No kidding! I’m so used to googling problems first since high school to the point that I was able to install Ubuntu and other linux distros back then.'},
           ],
