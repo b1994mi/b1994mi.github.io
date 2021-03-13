@@ -6,6 +6,10 @@ Vue.component('works-card', {
         return {
 
             works: [
+                { img: 'images/my-sixth.png', title: 'Review App', content: "A responsive web app (deployed using github pages) that consumes a REST API (deployed on Heroku) to create reviews from users. Users can post, edit, and delete their reviews with or without pictures.", links: [
+                    {link: 'https://b1994mi.github.io/travling-review-app/', logo: 'fa fa-desktop w3-large', logoText: 'Website'},
+                    {link: 'https://github.com/b1994mi/travling-review-app/', logo: 'fab fa-github w3-large', logoText: 'Github'},
+                ]},
                 { img: 'images/my-fourth.png', title: 'SoccerUpdate', content: "Static web that consume Football-Data and Wikipedia REST API with modern Javascript syntax and Bootstrap. This was a group assignment when I took full-stack bootcamp", links: [
                     {link: 'https://rahmatvp.github.io/projectIsmailRahmat/', logo: 'fa fa-desktop w3-large', logoText: 'Website'},
                     {link: 'https://github.com/rahmatvp/projectIsmailRahmat', logo: 'fab fa-github w3-large', logoText: 'Github'},
