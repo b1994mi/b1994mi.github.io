@@ -90,6 +90,14 @@ Vue.component('exp-card', {
                     logo: 'fa fa-briefcase',
                     items: [
                         {
+                            institution: 'Tamtech International',
+                            detail: 'Back-End Intern',
+                            from: 'Feb 2021',
+                            to: 'May 2021',
+                            present: false,
+                            desc: `Help develop REST API using express.js with MongoDB.`
+                        },
+                        {
                             institution: 'Ministry of Public Works',
                             detail: 'Data Management Staff',
                             from: 'Jun 2019',
@@ -110,7 +118,7 @@ Vue.component('exp-card', {
                             detail: 'Full-Stack Bootcamp',
                             from: 'Dec 2020',
                             to: 'Feb 2021',
-                            desc: `Full-stack bootcamp with MERN stack.`
+                            desc: `Full-stack bootcamp learning Nuxt.js and Express.js using MySQL database.`
                         },
                         {
                             institution: 'Nurul Fikri',
