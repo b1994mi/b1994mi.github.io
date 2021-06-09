@@ -90,6 +90,14 @@ Vue.component('exp-card', {
                     logo: 'fa fa-briefcase',
                     items: [
                         {
+                            institution: 'Kulina',
+                            detail: 'Back-End Dev',
+                            from: 'Jun 2021',
+                            to: 'Present',
+                            present: true,
+                            desc: `Maintenance and development of Food.id REST API using golang.`
+                        },
+                        {
                             institution: 'Tamtech International',
                             detail: 'Back-End Intern',
                             from: 'Feb 2021',
